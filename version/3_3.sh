@@ -8,9 +8,6 @@ sudo easy_install-3.3 pip
 pip3.3 install virtualenv
 virtualenv -p python3.3 $HOME/venv/3.3
 
-# Activate virtualenv on login
-echo 'source $HOME/venv/3.3/bin/activate' >> $HOME/.bashrc
-
 # Install pip packages
 . $HOME/venv/3.3/bin/activate
 pip install pyopenssl ndg-httpsclient pyasn1

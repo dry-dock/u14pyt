@@ -4,9 +4,6 @@ sudo apt-get install -y python python-dev python-pip python-virtualenv
 # Install virtualenv
 virtualenv -p python $HOME/venv/2.7
 
-# Activate virtualenv on login
-echo 'source $HOME/venv/2.7/bin/activate' >> $HOME/.bashrc
-
 # Install pip packages
 . $HOME/venv/2.7/bin/activate
 pip install pyopenssl ndg-httpsclient pyasn1
