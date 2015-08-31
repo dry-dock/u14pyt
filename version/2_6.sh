@@ -1,12 +1,5 @@
-#!/bin/bash -e
-
-# install python prereqs
-add-apt-repository -y ppa:fkrull/deadsnakes
-apt-get update
-apt-get install -y libxml2 libxml2-dev libxslt1.1 libxslt1-dev libffi-dev libssl-dev
-
 # Install Python 2.6
-sudo apt-get install -y python2.6 python2.6-dev 
+sudo apt-get install -y python2.6 python2.6-dev
 
 # Install virtualenv
 sudo wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O /tmp/ez_setup.py
