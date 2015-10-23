@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Install Python 3.3
 sudo apt-get install -y python3.3 python3.3-dev
 

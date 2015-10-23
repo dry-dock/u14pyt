@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Install Python 2.7
 sudo apt-get install -y python python-dev python-pip python-virtualenv
 

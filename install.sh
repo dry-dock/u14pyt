@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # install python prereqs
 add-apt-repository -y ppa:fkrull/deadsnakes
 apt-get update

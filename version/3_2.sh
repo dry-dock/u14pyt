@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Install Python 3.2
 sudo apt-get install -y python3.2 python3.2-dev
 

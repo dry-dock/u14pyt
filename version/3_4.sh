@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Install Python 3.4
 sudo apt-get install -y python3.4 python3.4-dev
 

@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Install Python 2.6
 sudo apt-get install -y python2.6 python2.6-dev
 
