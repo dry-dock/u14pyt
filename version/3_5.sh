@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt-get install python3.5
+
 wget https://bootstrap.pypa.io/get-pip.py
 python3.5 get-pip.py
 pip install virtualenv
