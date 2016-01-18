@@ -1,4 +1,4 @@
-ubuntu1404_python
+u14pyt
 =================
 
 Shippable CI image for Python on Ubuntu 14.04. Available python versions:
