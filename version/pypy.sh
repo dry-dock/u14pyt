@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
+
+echo "================= Installing PYPY ==================="
 
 #install Pypy
 wget https://bitbucket.org/pypy/pypy/downloads/pypy-4.0.1-linux64.tar.bz2
@@ -8,12 +10,7 @@ mkdir /opt/pypy
 mkdir /opt/pypy/site-packages/
 cd /opt/pypy
 
-#Install pip
-wget https://bootstrap.pypa.io/get-pip.py
-pypy get-pip.py
-
 #Install virtualenv
-pip install virtualenv
 virtualenv -p pypy $HOME/venv/pypy
 
 # Install pip packages
@@ -27,3 +24,4 @@ pip install nose mock pytest coverage
 #Default lxml throws error
 #CFLAGS="-O0" #STATIC_DEPS=true pip install lxml #throws error :disappointed:
 deactivate
+echo "================= Successfully Installed PYPY ==================="
