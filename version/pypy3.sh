@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
+
+echo "================= Installing PYPY3 ==================="
 
 #install Pypy
 wget https://bitbucket.org/pypy/pypy/downloads/pypy3-2.4.0-linux64.tar.bz2
@@ -8,12 +10,7 @@ mkdir /opt/pypy3
 mkdir /opt/pypy3/site-packages/
 cd /opt/pypy
 
-#Install pip
-wget https://bootstrap.pypa.io/get-pip.py
-pypy3 get-pip.py
-
 #Install virtualenv
-pip install virtualenv
 virtualenv -p pypy3 $HOME/venv/pypy3
 
 # Install pip packages
@@ -28,4 +25,4 @@ pip install nose mock pytest coverage
 #Default lxml throws error
 #CFLAGS="-O0" #STATIC_DEPS=true pip install lxml #throws error :disappointed:
 deactivate
-echo "================= SUCESSFULLY INSTALLED PYPY3 ==================="
+echo "================= Successfully Installed PYPY3 ==================="
